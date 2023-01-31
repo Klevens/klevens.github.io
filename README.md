@@ -6,6 +6,8 @@ Portfolio created following:
  Who developed this Tutorial?:
  - Slobodan  [Slobodan - Youtube](https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw).
 
+## Portfolio website
+Visit [Kleven Portfolio](http://localhost:3000).
 
 ## Dependences
 Dependences needed to run this portfolio:
@@ -14,16 +16,40 @@ Dependences needed to run this portfolio:
 
 - Which will be using to implement the contact form.
 
-`@fontawesome/free-brands-svg-icons`
+`@fortawesome/free-brands-svg-icons`
 
 - We are gonna use a couple of this icons.
 
-`@fontawesome/free-solid-svg-icons` 
+`@fortawesome/free-solid-svg-icons` 
 
 - We are gonna use a couple of this icons.
 
-## Portfolio website
-Visit [Kleven Portfolio](http://localhost:3000).
+`animate.css`
+
+- CSS library for animating objects 
+
+`gsap-trial`
+
+- For more advance animations.
+
+`loaders.css`
+
+- For loaders.
+
+`react-loaders`
+
+- For loader.css react integration.
+
+`react-leaflet`
+
+- Library for use maps.
+
+`react-router-dom`
+
+- To navigate for few pages
+
+`sass`
+- To write less css
 
 
 
