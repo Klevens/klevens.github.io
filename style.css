@@ -1,0 +1,78 @@
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/* NAVBAR STYLE */
+.navbar {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 7px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px 28px;
+
+}
+.navContainer {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+/*NAVBAR Izquierda*/
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 0px 10px;
+   
+}
+/*NAVBAR derecha*/
+.navbar img {
+    border: 2px solid black;
+    border-radius: 50%;
+    max-width: 40px;
+
+}
+.navbar li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li a span {
+    padding-left: 10px;
+}
+
+/* ABOUT SECCION */
+
+#about {
+    background-color: rgba(172, 210, 166, 0.50);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.aboutInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.aboutInfo p {
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+/*   MOBILE   */
+
+@media screen and (max-width: 600px) {
+
+    .aboutInfo {
+        flex-direction: column;
+    }
+    
+}
