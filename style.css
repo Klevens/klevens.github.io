@@ -68,11 +68,18 @@ body {
 }
 #dynamicH1 {
     color: darkslateblue;
+    margin-left:  20px;
+}
+.dynamic {
+    display: flex;
+    align-items: center;
 }
 
 /* ANIMATION  pipe*/
-#dynamicH1::after {
-    content: " | ";
+#rayita {
+    padding: 0 4px;
+}
+.parpadea {
     animation-name: parpadeo ;
     animation-duration: 1s;
     animation-timing-function: linear;
