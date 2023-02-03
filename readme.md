@@ -1,5 +1,5 @@
 # Personal Portfolio
-This is my personal portfolio made using only HTML, CSS and Javascript.
+This is my personal portfolio made using HTML, CSS and Javascript.
 
 ### Demo
 For Demo you can visit [myportfolio](https//hola.com)
