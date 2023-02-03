@@ -4,9 +4,10 @@ const text = document.getElementById("dynamicH1");
 // H1 que conitiene el pipe que parpadea
 const rayita = document.getElementById("rayita");
 
-let str = ["Fiera", "Mastodonte", "Eminencia"];
+let str = ["Ingeniero en Sistemas", "Full Stack Developer"];
 
 const speed = 120;
+const eraseSpeed = 80;
 const waitTime = 2000;
 let i = 0;
 let x = 0;
@@ -20,7 +21,7 @@ const removeTypeWriter = (str) => {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(removeTypeWriter(result));
-      }, speed);
+      }, eraseSpeed);
     });
   }
   return "Esta es una bombaa";
@@ -45,7 +46,7 @@ const typeWriter = () => {
     x = 0;
     typeWriter();
   }
-  console.log(text.innerHTML);
+ 
 };
 
 setTimeout(typeWriter, speed);

@@ -7,7 +7,8 @@ body {
 }
 /* NAVBAR STYLE */
 .navbar {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 7px -8px;
+    
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,12 +32,7 @@ body {
    
 }
 /*NAVBAR derecha*/
-.navbar img {
-    border: 2px solid black;
-    border-radius: 50%;
-    max-width: 40px;
 
-}
 .navbar li a {
     display: flex;
     justify-content: center;
@@ -63,18 +59,47 @@ body {
 }
 
 .aboutInfo p {
-    max-width: 300px;
+    max-width: 800px;
     margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
 }
 #dynamicH1 {
     color: darkslateblue;
-    margin-left:  20px;
+    margin-left:  16px;
 }
 .dynamic {
     display: flex;
     align-items: center;
 }
 
+.textInfoContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textInfoContainer button {
+        width: 120px;
+        height: 60px;
+        outline: none;
+        cursor: pointer;
+        background: none;
+        transition: .5s;
+        font-size: 18px;
+        border-radius: 5px;
+        font-family: "Lato",sans-serif;
+
+}
+
+
+.textInfoContainer button:hover{
+    background-color: #483d8b;
+    border: none;
+    color: white;
+    font-size: 20px;
+    transform:scale(1.1);
+  }
 /* ANIMATION  pipe*/
 #rayita {
     padding: 0 4px;
