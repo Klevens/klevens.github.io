@@ -6,41 +6,70 @@ body {
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
 /* NAVBAR STYLE */
+
+.navContainer {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 70px;
+}
 .navbar {
-    
+    height: 100%;
+
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
     display: flex;
     align-items: center;
     justify-content: center;
 
+
+
 }
-.navContainer {
-    position: fixed;
-    width: 100%;
-    background-color: white;
-}
+
 /*NAVBAR Derecha*/
 .navbar ul {
-
+    height: 100%;
     padding-left: 0px;
-    list-style: none;
     display: flex;
+    
+    
+    
+
 
 }
 
-.navbar ul li {
+.navbar ul a {
     padding: 0px 10px;
-   
+    transition: 0.4s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+
+}
+
+.navbar ul a:hover {
+    background-color: #5e5594;
+    color: white;
+}
+
+.navbar ul span {
+    border-left: 1px solid gainsboro;
 }
 
 /* ABOUT SECCION */
-
+#relleno {
+    padding-top: 40PX;
+}
 #about {
-    /* background-color: rgba(172, 210, 166, 0.50); */
+    background-color: rgba(245,245,245,.8);
     height: 100vh;
     display: flex;
     justify-content: center;
+  
 }
 .aboutInfo {
     display: flex;
@@ -53,7 +82,9 @@ body {
     max-width: 800px;
     margin-left: 20px;
     margin-right: 20px;
-    text-align: center;
+    text-align: justify;
+    font-size: 24px;
+    max-width: 600px;
 }
 #dynamicH1 {
     color: darkslateblue;
@@ -71,8 +102,8 @@ body {
 }
 
 .textInfoContainer button {
-        width: 120px;
-        height: 40px;
+        width: 160px;
+        height: 60px;
         cursor: pointer;
         background: none;
         transition: .5s;
@@ -132,19 +163,49 @@ body {
     position: fixed;
     z-index: 999;
     cursor: pointer;
+    background-color: white;
 } 
 
 #upBtn i {
     padding-top: 6px;
     font-size: 28px;
 }
+/* FOOTER */
+.main-footer {
+    background-color: black;
+    padding: 20px;
+    color: rgb(191, 199, 199);
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+.main-footer p {
+    max-width: 400px;
+    padding: 0 10px;
+    border-top: 1px solid rgb(191, 199, 199);
+    padding-top: 10px;
+    
+    
+}
 
 /*   MOBILE   */
 
 @media screen and (max-width: 600px) {
 
+    /* ABOUT SECCION */
+
+    #about {
+        height: 74vh;
+
+    }
     .aboutInfo {
         flex-direction: column;
     }
+
+    .aboutInfo p {
+        font-size: 18px;
+    }
+
+
     
 }

@@ -13,20 +13,30 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <section id="home">
       <div class="navContainer">
         <nav class="navbar">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <a href="#home">Home</a>
+            <span></span>
+            <a href="#skills">Skills</a>
+            <span></span>
+            <a href="#projects">Projects</a>
           </ul>
         </nav>
       </div>
     </section>
+
+    <div id="relleno"></div>
 
     <section id="about">
       <div class="aboutInfo">
@@ -46,9 +56,77 @@
       </div>
     </section>
 
-    <div id="upBtn">
-        <i class="fa-solid fa-angle-up"></i>
-    </div>
+    <a id="upBtn" href="#home">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <section id="skills">
+      <h3 class="skillsTitle">My Skills</h3>
+      <div class="mySkills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">GIT</div>
+        <div class="skill">Github</div>
+        <div class="skill">Terminal</div>
+        <div class="kill">Express</div>
+        <div class="skill">SQL</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div>
+        <h2>
+          <span>Contact</span>
+        </h2>
+        <div class="contact_container">
+          <form action="#" method="post">
+            <div>
+              <label for="name">Name</label>
+              <input
+                placeholder="Enter Your Name"
+                type="text"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                placeholder="Enter Your Email"
+                type="email"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                cols="30"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <footer class="main-footer">
+            <p>
+              © Copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Made by Klevens
+            </p>
+      </footer>
+    </section>
 
     <script src="script.js"></script>
   </body>
