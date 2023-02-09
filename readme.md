@@ -1,6 +1,8 @@
 # Personal Portfolio
 This is my personal portfolio made using HTML, CSS and Javascript.
 
+I use Formspree for the contact form;
+
 ### Demo
 For Demo you can visit [myportfolio](https://klevens.github.io/portfolio/)
 
