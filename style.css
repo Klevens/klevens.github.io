@@ -1,211 +1,236 @@
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 body {
-    font-family: 'Comfortaa', cursive;
-    margin: 0;
-    padding: 0;
+  font-family: "Comfortaa", cursive;
+  margin: 0;
+  padding: 0;
 }
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 /* NAVBAR STYLE */
 
 .navContainer {
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    height: 70px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 70px;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content:center
 }
 .navbar {
-    height: 100%;
-
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-
+  height: 100%;
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 80%;
+  max-width: 800px;
 }
 
-/*NAVBAR Derecha*/
+/*NAVBAR Elements*/
+
+.navbar > a {
+    font-size: 1.6em;
+}
+
+
 .navbar ul {
-    height: 100%;
-    padding-left: 0px;
-    display: flex;
-    
-    
-    
-
-
+  height: 100%;
+  padding-left: 0px;
+  display: flex;
 }
 
 .navbar ul a {
-    padding: 0px 10px;
-    transition: 0.4s;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    color: black;
-
+  padding: 0px 10px;
+  transition: 0.4s;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: black;
 }
 
 .navbar ul a:hover {
-    background-color: #5e5594;
-    color: white;
-}
-
-.navbar ul span {
-    border-left: 1px solid gainsboro;
+  background-color: #5e5594;
+  color: white;
 }
 
 /* ABOUT SECCION */
 #relleno {
-    padding-top: 40PX;
+  padding-top: 40px;
 }
 #about {
-    background-color: rgba(245,245,245,.8);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-  
+  background-color: rgba(245, 245, 245, 0.8);
+  height: 74vh;
+  display: flex;
+  justify-content: center;
 }
 .aboutInfo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutInfo p {
-    max-width: 800px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: justify;
-    font-size: 24px;
-    max-width: 600px;
+  max-width: 800px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  font-size: 24px;
+  max-width: 600px;
 }
 #dynamicH1 {
-    color: darkslateblue;
-    margin-left:  16px;
+  color: darkslateblue;
+  margin-left: 16px;
 }
 .dynamic {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .textInfoContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .textInfoContainer button {
-        width: 160px;
-        height: 60px;
-        cursor: pointer;
-        background: none;
-        transition: .5s;
-        font-size: 16px;
-        border-radius: 5px;
-        font-family: "Lato",sans-serif;
-        margin-top: 40px;
+  width: 160px;
+  height: 60px;
+  cursor: pointer;
+  background: none;
+  transition: 0.5s;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  margin-top: 40px;
 }
 
+.textInfoContainer button:hover {
+  background-color: #5e5594;
+  border: none;
+  color: white;
 
-.textInfoContainer button:hover{
-    background-color: #5e5594;
-    border: none;
-    color: white;
-
-    transform:scale(1.1);
-  }
+  transform: scale(1.1);
+}
 /* ANIMATION  pipe*/
 #rayita {
-    padding: 0 4px;
+  padding: 0 4px;
 }
 .parpadea {
-    animation-name: parpadeo ;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes parpadeo {
-    0% {
-        opacity: 1;
-    }
-    20% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    90% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-    
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #upBtn {
-    
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    border-radius: 10px;
-    bottom: 20px;
-    right: 20px;
-    position: fixed;
-    z-index: 999;
-    cursor: pointer;
-    background-color: white;
-} 
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  z-index: 999;
+  cursor: pointer;
+  background-color: white;
+}
 
 #upBtn i {
-    padding-top: 6px;
-    font-size: 28px;
+  padding-top: 6px;
+  font-size: 28px;
 }
+
+/* SKILLS */
+#skills {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+  flex-direction: column;
+}
+
+#skills div {
+  display: inline-block;
+  padding:  0 20px;
+}
+
+#skills div div {
+  margin: 20px 0px;
+  max-width: 600px;
+  text-align: center;
+}
+
+#skills div div div {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  flex-wrap: wrap;
+}
+
+#skills div div div a {
+  padding: 6px;
+  width: 80px;
+  height: 80px;
+}
+#skills div div  div a img {
+  width: 80px;
+  height: 80px;
+}
+
 /* FOOTER */
 .main-footer {
-    background-color: black;
-    padding: 20px;
-    color: rgb(191, 199, 199);
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
+  background-color: black;
+  padding: 20px;
+  color: rgb(191, 199, 199);
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
 }
-.main-footer p {
-    max-width: 400px;
-    padding: 0 10px;
-    border-top: 1px solid rgb(191, 199, 199);
-    padding-top: 10px;
-    
-    
-}
+
 
 /*   MOBILE   */
 
 @media screen and (max-width: 600px) {
+  /* ABOUT SECCION */
 
-    /* ABOUT SECCION */
+  #skills {
+    flex-direction: column;
+  }
 
-    #about {
-        height: 74vh;
+  #skills div {
+    display: contents;
+  }
 
-    }
-    .aboutInfo {
-        flex-direction: column;
-    }
+  .aboutInfo {
+    flex-direction: column;
+  }
 
-    .aboutInfo p {
-        font-size: 18px;
-    }
-
-
-    
+  .aboutInfo p {
+    font-size: 18px;
+  }
 }
