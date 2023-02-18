@@ -308,15 +308,6 @@ html {
 
 @media screen and (max-width: 600px) {
 
-  /* SKILLS SECTION */
-  #skills {
-    flex-direction: column;
-  }
-
-  #skills div {
-    display: contents;
-  }
-
 
     /* ABOUT SECCION */
 
@@ -336,6 +327,24 @@ html {
 
 }
 
+
+
+}
+
+/* TABLET */
+
+@media screen and (max-width: 800px) {
+
+
+
+    /* SKILLS SECTION */
+    #skills {
+      flex-direction: column;
+    }
+  
+    #skills div {
+      display: contents;
+    }
 
 
 }
